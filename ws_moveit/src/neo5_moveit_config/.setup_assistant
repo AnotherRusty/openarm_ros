@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: neo5_description
+    relative_path: urdf/neo5.urdf
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/neo5.srdf
+  CONFIG:
+    author_name: danny
+    author_email: zhujiachen92@hotmail.com
+    generated_timestamp: 1560525677
