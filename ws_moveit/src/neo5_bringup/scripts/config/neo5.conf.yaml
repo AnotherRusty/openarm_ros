@@ -1,0 +1,36 @@
+Joints:
+  - Joint1:
+    name: "joint1"
+    type: "servo"
+    params:
+      min_angle: 0
+      max_angle: 180
+      norm: 90
+  - Joint2:
+    name: "joint2"
+    type: "servo"
+    params:
+      min_angle: 0
+      max_angle: 180
+      norm: 90
+  - Joint3:
+    name: "joint3"
+    type: "servo"
+    params:
+      min_angle: 0
+      max_angle: 180
+      norm: 90
+  - Joint4:
+    name: "joint4"
+    type: "servo"
+    params:
+      min_angle: 0
+      max_angle: 180
+      norm: 90
+  - Joint5:
+    name: "gripper"
+    type: "servo"
+    params:
+      min_angle: 0
+      max_angle: 180
+      norm: 90                  

@@ -1,0 +1,5 @@
+/ws_moveit/build
+/ws_moveit/devel
+/ws_moveit/logs
+/ws_moveit/.catkin_tools
+.vscode

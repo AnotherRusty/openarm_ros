@@ -1,0 +1,3 @@
+<launch>
+    <node name='bringup' pkg='neo5_bringup' type='bringup.py' output='screen'></node>
+</launch>
