@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: victor5_description
+    relative_path: urdf/victor5_description.urdf
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/victor5_description.srdf
+  CONFIG:
+    author_name: danny
+    author_email: zhujiachen92@hotmail.com
+    generated_timestamp: 1564964332
