@@ -3,3 +3,4 @@
 /ws_moveit/logs
 /ws_moveit/.catkin_tools
 .vscode
+**/.vscode
