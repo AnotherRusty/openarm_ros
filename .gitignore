@@ -4,3 +4,4 @@
 /ws_moveit/.catkin_tools
 .vscode
 **/.vscode
+*.pyc
