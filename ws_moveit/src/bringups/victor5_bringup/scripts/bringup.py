@@ -7,7 +7,7 @@ from sensor_msgs.msg import JointState
 from math import pi
 
 
-NAME = 'neo5'
+NAME = 'victor5'
 PORT = '/dev/ttyACM0'
 BAUDRATE = 9600
 
