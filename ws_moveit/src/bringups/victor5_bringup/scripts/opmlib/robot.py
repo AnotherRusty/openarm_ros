@@ -24,7 +24,7 @@ class Robot:
     def configure(self, name, port, baudrate):
         self.name = name
         home_path = os.getenv('HOME')
-        config_file = home_path+'/openarm_ros/ws_moveit/src/neo5_bringup/scripts/config/'+self.name+'.conf.yaml'
+        config_file = home_path+'/openarm_ros/ws_moveit/src/bringups/victor5_bringup/scripts/config/'+self.name+'.yaml'
         with open(config_file) as f:
             conf = yaml.safe_load(f)
             f.close()

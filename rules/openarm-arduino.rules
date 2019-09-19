@@ -1,0 +1,5 @@
+# Arduino Uno
+SUBSYSTEM=="tty", ATTRS{idVendor}=="2341", ATTRS{idProduct}=="0043", MODE:="0777", SYMLINK+="robot"
+
+# dog hunter AG Arduino Uno Rev3
+SUBSYSTEM=="tty", ATTRS{idVendor}=="2a03", ATTRS{idProduct}=="0043", MODE:="0777", SYMLINK+="robot"
