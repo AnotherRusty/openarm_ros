@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: alex5_description
+    relative_path: urdf/alex5_description.urdf
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/alex5_description.srdf
+  CONFIG:
+    author_name: openarm
+    author_email: zhujiachen92@hotmail.com
+    generated_timestamp: 1580909742

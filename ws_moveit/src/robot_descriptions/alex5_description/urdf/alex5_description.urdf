@@ -1,0 +1,275 @@
+<robot
+  name="alex5_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.035092 -1.8934E-18 0.016426"
+        rpy="0 0 0" />
+      <mass
+        value="0.6125" />
+      <inertia
+        ixx="0.0008262"
+        ixy="1.5655E-19"
+        ixz="-0.00033468"
+        iyy="0.0031811"
+        iyz="3.1218E-20"
+        izz="0.0036068" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://alex5_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.51765 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://alex5_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.0019254 0.00072917 0.0091143"
+        rpy="0 0 0" />
+      <mass
+        value="0.26786" />
+      <inertia
+        ixx="0.00022883"
+        ixy="4.4171E-07"
+        ixz="-7.0345E-06"
+        iyy="0.00023337"
+        iyz="-2.6224E-06"
+        izz="0.00042138" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://alex5_description/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://alex5_description/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.048"
+      rpy="0 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="-1.3878E-17 -0.052 -0.026"
+        rpy="0 0 0" />
+      <mass
+        value="0.048335" />
+      <inertia
+        ixx="7.6992E-05"
+        ixy="-2.8203E-21"
+        ixz="-9.9754E-22"
+        iyy="3.0796E-05"
+        iyz="-4.9991E-06"
+        izz="5.1135E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://alex5_description/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://alex5_description/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0.0005 -0.0245 0.0245"
+      rpy="-1.5708 2.381E-16 3.1416" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="-0.037382 0.003118 -0.026406"
+        rpy="0 0 0" />
+      <mass
+        value="0.11163" />
+      <inertia
+        ixx="2.5487E-05"
+        ixy="-1.2359E-08"
+        ixz="6.4387E-06"
+        iyy="0.00011851"
+        iyz="8.6123E-08"
+        izz="0.00010693" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://alex5_description/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://alex5_description/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0 -0.104 -0.052"
+      rpy="3.1416 -2.1933E-16 1.5708" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gripper_link">
+    <inertial>
+      <origin
+        xyz="0 -2.1684E-19 -0.0014547"
+        rpy="0 0 0" />
+      <mass
+        value="0.0019584" />
+      <inertia
+        ixx="5.1161E-08"
+        ixy="-6.2709E-25"
+        ixz="-1.9296E-24"
+        iyy="5.1161E-08"
+        iyz="2.2846E-25"
+        izz="9.8556E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://alex5_description/meshes/gripper_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://alex5_description/meshes/gripper_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_gripper"
+    type="revolute">
+    <origin
+      xyz="-0.0935 0 -0.0145"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="link3" />
+    <child
+      link="gripper_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
