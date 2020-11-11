@@ -60,12 +60,7 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        gripper_link:
+        link0:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -85,6 +80,15 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        link4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        link5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -95,7 +99,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: base_link
+    Fixed Frame: link0
     Frame Rate: 30
   Name: root
   Tools:
@@ -116,25 +120,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.7967875
+      Distance: 1.04997694
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.0198547114
-        Y: 0.00059009908
-        Z: 0.136360496
+        X: 0
+        Y: 0
+        Z: 0
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.430397928
+      Pitch: 0.450398028
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.49858332
+      Yaw: 0.715395629
     Saved: ~
 Window Geometry:
   Displays:
